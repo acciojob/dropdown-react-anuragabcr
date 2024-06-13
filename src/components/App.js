@@ -154,7 +154,7 @@ function App() {
 				<option key={index} value={index}>{state.name}</option>
 			))}
 		</select>
-		<div id="state-name">{data[state].name}</div>
+		<div id="state-title">{data[state].name}</div>
 		<div id="state-description">{data[state].description}</div>
 		</div>
 		<div>
@@ -164,7 +164,7 @@ function App() {
 				<option key={index} value={index}>{city.name}</option>
 			))}
 		</select>
-		<div id="city-name">{data[state].city[city].name}</div>
+		<div id="city-title">{data[state].city[city].name}</div>
 		<div id="city-description">{data[state].city[city].description}</div>
 		</div>
 		<div>	
@@ -174,8 +174,8 @@ function App() {
 					<option key={index} value={index}>{landmarks.name}</option>
 				))}
 			</select>
-			<div id="landmarks-name">{data[state].city[city].landmarks[landmarks].name}</div>
-			<div id="landmarks-description">{data[state].city[city].landmarks[landmarks].description}</div>
+			<div id="landmark-title">{data[state].city[city].landmarks[landmarks].name}</div>
+			<div id="landmark-description">{data[state].city[city].landmarks[landmarks].description}</div>
 		</div>	
 	</div>
 	);
